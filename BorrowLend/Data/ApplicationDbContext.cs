@@ -10,9 +10,12 @@ namespace BorrowLend.Data
     public class ApplicationDbContext:DbContext
     {
         public DbSet<Item> Items1 { get; set; }
+        public DbSet<Expense> Expenses { get; set; }
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options):base(options)
         {
 
         }
+
+
     }
 }
